@@ -212,6 +212,7 @@ height: 69px;}
             background-color: aliceblue;
             border: 5px red;
             padding: 30px;
+            font-size: larger;
         }
 
 
@@ -689,8 +690,13 @@ Aniruddha Mane - CV
             
     
         
-         <button id="bbtn" onclick="history.back()">go back Home Page=> Click hear</button>
-          
+          <!-- <button id="bbtn"><a href="https://aniruddhamaheshmane.github.io/main-web-page/">go back Home Page=> Click hear</a></button>
+        
+          <button id="bbtn" onclick="location.href ='https://aniruddhamaheshmane.github.io/main-web-page';">fff</button>
+         -->
+         <a href="https://aniruddhamaheshmane.github.io/main-web-page">
+            <button id="bbtn">go back Home Page=></button>
+        </a>
         </marquee>
     
     
@@ -721,16 +727,16 @@ const time = new Date().getHours();
 
 let all = document.getElementById("allbackbtnpage");
 
-  let smsa = prompt("Entrw your name.");
+//   let smsa = prompt("Entrw your name.");
 
-function sdc() {
-    if (smsa === "" || smsa === null) {
-        alert("page request @ please ENTER your name")
-        window.location.reload();
-}else{
-    firsta_lert()
-};
-};sdc();
+// function sdc() {
+//     if (smsa === "" || smsa === null) {
+//         alert("page request @ please ENTER your name")
+//         window.location.reload();
+// }else{
+//     firsta_lert()
+// };
+// };sdc();
 
 // function sdc2() {
 //     if (smsa === null) {
@@ -767,7 +773,7 @@ function sdc() {
           var printb = document.querySelector("#pr");
     
           printb.addEventListener("click",function(){
-            alert("Thank you "+ smsa + " " +"for give my CV print.\n"+"print date and time:-\n" + new Date());
+            alert("Thank you "+   " " +"for give my CV print.\n"+"print date and time:-\n" + new Date());
          
             setTimeout(function printpage() { 
                 window.print(); 
@@ -812,6 +818,7 @@ function sdc() {
     //     // lastpla.innerValue = a;
     //     lastpla.style.backgroundColor = "red"
     // })
+
     </script>
 </body>
 </html>
